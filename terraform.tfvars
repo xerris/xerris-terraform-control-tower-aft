@@ -1,0 +1,7 @@
+ct_management_account_id    = "715084226037"
+log_archive_account_id      = "383013210771"
+audit_account_id            = "865941893029"
+aft_management_account_id   = "231721283845"
+ct_home_region              = "us-east-1"
+tf_backend_secondary_region = "us-west-2"
+github_username             = "jorgen-xerris"
