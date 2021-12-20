@@ -1,6 +1,6 @@
 # xerris-terraform-control-tower-aft 
 
-## Introducction
+## Introduction
 
  The main objective of this repo is to provide an easy and fast Provisioning for  AWS Control tower Accounts via Terraform IAC automated pipeline. Before deploying this solution, You need to have an AWS Control Tower landing zone deployed in their account.
 
@@ -9,8 +9,8 @@
 
 # Pre-requisites
 
-* AWS IAM user(non-root user) credentials with AdministratorAccess.
-* AWS Control Tower, with the default Log and Audit accounts created.
+* AWS IAM user(non-root user) credentials with Administrator Access.
+* AWS Control Tower, with the default Log and Audit accounts created. (Follow https://github.com/xerris/xerris-control-tower.git if not done already)
 * Terraform v0.15+ installed locally .
 * AWS account.
 * AWS CLI.
