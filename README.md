@@ -19,7 +19,7 @@
 # How to
 
 ## Account and Repo setup
-The solutions needs an new OU and new AWS account
+The solutions needs new OU and new AWS account
 * Add a new  OU in AWS Control Tower under your Root OU .
 * Enroll a new  AWS account for the new OU, The pipelines  for AWS Account creation will be created in this account.
 ![alt text](./img/1.png " " )
@@ -121,7 +121,7 @@ Initializing provider plugins...
 Terraform has been successfully initialized!
 
 ```
-After terraform apply full setup takes around 30  minutes, In that time  a collection of AWS services will be created to help you manage AWS Control Tower accounts through Terraform configuration.
+The terraform apply setup takes around 30  minutes, In that time  a collection of AWS services will be created to help you manage AWS Control Tower accounts through Terraform configuration.
 ```
 $ terraform apply
 
@@ -146,26 +146,26 @@ Apply complete! Resources: 306 added, 0 changed, 0 destroyed.
  
 
 # One-time Version Control System configuration
- The Account creation action is triggered by the VCS and Executes by Codepipeline for that Reason We need to enable CodeStar connection to watch for changes to your Github account.
+ The Account creation action is triggered by the VCS and executed by CodePipeline for that reason We need to enable CodeStar connection to watch for changes to your Github account.
 
  * The Connection status is pending\
 ![alt text](./img/2.png " " )
-* Click in Update pending connections\
+* Click Update pending connections\
 ![alt text](./img/3.png " ")
-* Chose for your VCS github and Authenticate.\
+* Choose for your VCS GitHub and authenticate.\
 ![alt text](./img/4.png " ")
 
-* Click on install app\
+* Click Install a new app\
 ![alt text](./img/4.1.png " ")
-* Install AWS connector For Github, you need to select the forked repos\
+* Install AWS Connector For Github, you need to select the forked repos\
 ![alt text](./img/5.png " ")
-* A gitgub app id will be generated , then click on connect.\
+* A GitHub app id will be generated , then click on connect.\
 ![alt text](./img/6.png " ")
 * The status of the connection will change to available.\
 ![alt text](./img/7.png " ")
-* Now We need to add permission in AWS service catalog\
+* Now we need to add permissions in AWS service catalog.\
 ![alt text](./img/8.png " ")
-* Click on AWS Control Tower Accoun Factory\
+* Click on AWS Control Tower Account Factory\
 ![alt text](./img/9.png " ")
 * Select the Groups, roles, and users tab(third)
 ![alt text](./img/10.png " ")\
@@ -230,15 +230,15 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 ```
-*  We needs to add the info related with the new account We want to the deploy.
-* Code Pipeline will The account deployment  work. 
-* Just Do a commit and push.
+*  We need to add the info related with the new account We want to the deploy.
+* Code Pipeline will  perform the deployment of the new account.
+* Just Do a commit and push.\
 ![alt text](./img/20.png " ")
-* Pipeline previos state.
+* Pipeline previos state.\
 ![alt text](./img/21.png " ")
-* Pipeline running and Finished.
+* Pipeline running and Finished.\
 ![alt text](./img/22.png " ")
-*  AWS landing Zone Before account creation.
+*  AWS landing Zone Before account creation.\
 ![alt text](./img/23.png " ")
 * AWS landing Zone After account creation, We can se the new AWS account added to  our AWs landing zone.\
 ![alt text](./img/24.png " ")
