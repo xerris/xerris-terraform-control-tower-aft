@@ -30,7 +30,7 @@ The solution needs a new OU(Organization Unit) and a new AWS account inside the 
 
     ```
 
-* Then, You will need  to fork  to you github account below   4 repos .
+* Fork the 4 repos shown below in your GitHub account
    ```
     https://github.com/hashicorp/learn-terraform-aft-account-request
     https://github.com/hashicorp/learn-terraform-aft-global-customizations
