@@ -167,7 +167,7 @@ Apply complete! Resources: 306 added, 0 changed, 0 destroyed.
 ![alt text](./img/8.png " ")
 * Click on AWS Control Tower Account Factory\
 ![alt text](./img/9.png " ")
-* Select the Groups, roles, and users tab(third)
+* Select the Groups, roles, and users tab(third) \
 ![alt text](./img/10.png " ")\
 *  then click Add groups, roles, users.\
 ![alt text](./img/11.png " ")
