@@ -1,19 +1,11 @@
-output "ct_management_account_id" {
-  value = var.ct_management_account_id
+output "ecr_registry_id" {
+  value = module.ecr_module.registry_id
 }
 
-output "log_archive_account_id" {
-  value = var.log_archive_account_id
+output "ecr_name" {
+  value = module.ecr_module.ecr_name
 }
 
-output "audit_account_id" {
-  value = var.audit_account_id
-}
-
-output "aft_management_account_id" {
-  value = var.aft_management_account_id
-}
-
-output "region" {
-  value = var.ct_home_region
+output "main_apigw_id" {
+  value = aws_apigatewayv2_api.main_apigw.id
 }
